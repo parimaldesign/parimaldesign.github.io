@@ -8,7 +8,10 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;800&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
         <!-- Scroll Animation JS -->
         <script src="https://unpkg.com/scrollreveal"></script>
@@ -16,7 +19,10 @@
     <body>
         <header>
             <nav id="navbar">
-                <a href="#" class="logo"><img src="images/sh-logo.png" alt="StrawHat Design Logo"></a>
+                <a href="#" class="logo">
+                    <img src="images/logo-f.png" alt="logo" class="icon">
+                    <img id="ring" src="images/parimal-design-ring.png" alt="" class="ring">
+                </a>
                 <ul class="nav">
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact Me</a></li>
@@ -44,7 +50,7 @@
                 <h2>Curated Projects </h2>
                 <div class="projects-list">
                     <div class="project-tile">
-                        <a href="https://parimalbakrola.github.io/parimal.github.io/pure_broking" target="_blank" class="project-item">
+                        <a href="https://parimaldesign.github.io/pure_broking" target="_blank" class="project-item">
                             <div class="img-wrap">
                                 <img src="images/pure.jpg" alt="Pure Broking">
                             </div>
@@ -52,7 +58,7 @@
                         </a>
                     </div>
                     <div class="project-tile">
-                        <a href="https://parimalbakrola.github.io/parimal.github.io/fresh_florida/" target="_blank" class="project-item">
+                        <a href="https://parimaldesign.github.io/fresh_florida/" target="_blank" class="project-item">
                             <div class="img-wrap">
                                 <img src="images/fresh-florida.jpg" alt="Fresh Florida">
                             </div>
@@ -60,7 +66,7 @@
                         </a>
                     </div>
                     <div class="project-tile">
-                        <a href="https://parimalbakrola.github.io/parimal.github.io/adam_ben/" target="_blank" class="project-item">
+                        <a href="https://parimaldesign.github.io/adam_ben/" target="_blank" class="project-item">
                             <div class="img-wrap">
                                 <img src="images/adam-ben.jpg" alt="Adam Ben">
                             </div>
@@ -118,8 +124,9 @@
             </ul>
             <p><i class="fa fa-copyright"></i>2021  Designed & Developed with <i class="fa fa-heart"></i> by <a href="#">Parimal Bakrola</a></p>
         </footer>
-        <script>
 
+        <script src="script.js"></script>
+        <script>
             // Scroll Animation
             //common reveal options to create reveal animations
             ScrollReveal({

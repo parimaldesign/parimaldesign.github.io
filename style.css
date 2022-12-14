@@ -2,8 +2,8 @@ body,html{
 	padding: 0;
     margin: 0;
     position: relative;
-    height: 100vh;
-    overflow-x: hidden;font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+    font-family: 'Outfit', sans-serif;
     font-weight: 500;
 }
 
@@ -41,11 +41,59 @@ nav{
 
 nav .logo{
     display: block;
+    position: relative;
 }
 
 nav .logo img{
-    max-height: 50px;
+    max-height: 90px;
 }
+
+/* nav .logo .icon{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+} */
+
+nav .logo .ring{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: all ease-in-out .4s;
+    -webkit-animation: rotating 10s linear infinite;
+    -moz-animation: rotating 10s linear infinite;
+    -ms-animation: rotating 10s linear infinite;
+    -o-animation: rotating 10s linear infinite;
+    animation: rotating 10s linear infinite;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
 
 .nav{
     list-style: none;
@@ -124,7 +172,9 @@ footer p a:hover::after{
 }
 
 #welcome-section h1{
-    font-size: 2rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-transform: lowercase;
 }
 
 #welcome-section p{
@@ -175,6 +225,9 @@ footer p a:hover::after{
     padding-left: 20px;
     position: relative;
     display: inline-block;
+    font-weight: 100;
+    letter-spacing: .5px;
+    font-size: 2rem;
 }
 
 #projects h2::after{
@@ -192,15 +245,13 @@ footer p a:hover::after{
 
 .projects-list{
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     list-style: none;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .projects-list .project-tile{
-    width: 30%;
-    margin: 15px;
 }
 
 .projects-list .project-item{
@@ -275,8 +326,8 @@ footer .links{
     padding: 10px 15px;
     margin: 0 10px;
     text-decoration: none;
-    color: #c3c3c3;
-    background-color: #363950;
+    color: #20243e;
+    background-color: #d3dcff;
     box-shadow: 0 10px 10px rgb(28 32 58 / 50%);
     border-radius: 3px;
     transition: all ease-in-out .4s;
@@ -377,8 +428,8 @@ footer a:hover{
         flex-direction: column;
     }
 
-    .projects-list .project-tile{
-        width: 42%;
+    .projects-list {
+        grid-template-columns: repeat(2,1fr);
     }
 
 
