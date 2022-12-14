@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Fresh Florida</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Bootstrap Custom Select -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- Bootstrap Date picker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.standalone.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+          <img src="img/logo-transparent.png" alt="Fresh Florida Logo" class="logo">
+      </a>
+      <button class="navbar-toggler collapsed"" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn toggle-btn" id="theme_toggle">
+                <span class="icon-moon"></span>
+              </button>
+            </li>
+			<li class="nav-item dropdown user">
+				<a class="nav-link dropdown-toggle" id="usermenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img src="img/user.png" alt="profile"> Users name
+				</a>
+				<div class="dropdown-menu dropdown-primary" aria-labelledby="usermenu">
+					<a class="dropdown-item" href="account.html">My Account</a>
+					<a class="dropdown-item" href="#">Logout</a>
+				</div>
+			</li>
+            <li>
+              <a href="#" class="cart-icon">
+                <span class="count">3</span>
+                <i class="icon-basket"></i>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="page-header">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="user">
+            <div class="img-wrap">
+              <img src="img/user.png" alt="user" class="img-fluid">
+            </div>
+            <div class="details">
+              <p class="name">User Name</p>
+              <p class="mail">username@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="profile-page">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 col-md-12">
+          <ul class="nav nav-pills profile-nav" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active waves-light" id="profile_tab" data-toggle="pill" href="#profiletab" role="tab"
+                aria-controls="profiletab" aria-selected="true"><i class="icon-person"></i> My Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-light" id="orders_tab" data-toggle="pill" href="#ordertab" role="tab"
+                aria-controls="ordertab" aria-selected="false"><i class="icon-reset"></i> Previous Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-light" id="addresses_tab" data-toggle="pill" href="#addresses" role="tab"
+                aria-controls="addresses" aria-selected="false"><i class="icon-location"></i>Addresses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-light" id="reviews_tab" data-toggle="pill" href="#reviews" role="tab"
+                aria-controls="reviews" aria-selected="false"><i class="icon-quote"></i> Reviews</a>
+            </li>
+          </ul>
+          <div class="tab-content profile-tabs" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="profiletab" role="tabpanel" aria-labelledby="profile_tab">
+				<div class="content" id="profile">
+				<div class="img-wrap">
+					<img src="img/user.png" alt="user-name" class="img-fluid" id="userimg">
+					<i class="icon-edit waves-light" id="edit_img"></i>
+					<label for="file_upload" class="custom-file-upload">
+					Choose Picture
+					<input id="file_upload" type="file" onchange="readURL(this);">
+					</label>
+				</div>
+				<div class="details">
+					<div class="md-form">
+					<span class="label">Name</span>
+					<p>User Name</p>
+					<input type="text" value="User Name" class="form-control">
+					</div>
+					<div class="md-form">
+					<span class="label">Email Id</span>
+					<p>username@gmail.com</p>
+					<input type="email" value="username@gmail.com" class="form-control">
+					</div>
+					<div class="md-form">
+					<span class="label">Phone Number</span>
+					<p>+123 456 789</p>
+					<input type="text" value="+123 456 789" class="form-control">
+					</div>
+				</div>
+				</div>
+				<ul class="actions">
+				<li><button class="btn btn-grn" id="edit">Edit Profile</button></li>
+				<li><button class="btn btn-grn" data-toggle="modal" data-target="#pwd_modal">Change Password</button></li>
+				</ul>
+            </div>
+            <div class="tab-pane fade" id="ordertab" role="tabpanel" aria-labelledby="orders_tab">
+				<div class="accordion" id="orderList">
+					<div class="card">
+						<div id="order1" class="collapse show" aria-labelledby="orederid1" data-parent="#orderList">
+							<div class="card-body">
+								<div class="ordered-items">
+									<div class="item">
+										<img src="img/products/product1.jpg" alt="1" class="img-fluid">
+										<p class="name">Fresh Organic Lettuce</p>
+										<span>Fresh</span>
+										<span>6kg</span>
+										<span>$5/Kg</span>
+										<button class="btn btn-outline" data-toggle="modal" data-target="#review_modal"><i class="icon-quote"></i> Add Review</button>
+									</div>
+									<div class="item">
+										<img src="img/products/product1.jpg" alt="1" class="img-fluid">
+										<p class="name">Fresh Organic Lettuce</p>
+										<span>Fresh</span>
+										<span>6kg</span>
+										<span>$5/Kg</span>
+										<button class="btn btn-outline" data-toggle="modal" data-target="#review_modal"><i class="icon-quote"></i> Add Review</button>
+									</div>
+									<div class="item">
+										<img src="img/products/product1.jpg" alt="1" class="img-fluid">
+										<p class="name">Fresh Organic Lettuce</p>
+										<span>Fresh</span>
+										<span>6kg</span>
+										<span>$5/Kg</span>
+										<button class="btn btn-outline" data-toggle="modal" data-target="#review_modal"><i class="icon-quote"></i> Add Review</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-header" id="orederid1" data-toggle="collapse" data-target="#order1" aria-expanded="true" aria-controls="order1">
+							<p>Order Id : <span>#123</span></p><p>Bill : <span>$100</span></p> <i class="icon-chevron-down"></i>
+						</div>
+					</div>
+					<div class="card">
+						<div id="order2" class="collapse" aria-labelledby="orederid2" data-parent="#orderList">
+							<div class="card-body">
+								<div class="ordered-items">
+									<div class="item">
+										<img src="img/products/product1.jpg" alt="1" class="img-fluid">
+										<p class="name">Fresh Organic Lettuce</p>
+										<span>Fresh</span>
+										<span>6kg</span>
+										<span>$5/Kg</span>
+										<button class="btn btn-outline" data-toggle="modal" data-target="#review_modal"><i class="icon-quote"></i> Add Review</button>
+									</div>
+									<div class="item">
+										<img src="img/products/product1.jpg" alt="1" class="img-fluid">
+										<p class="name">Fresh Organic Lettuce</p>
+										<span>Fresh</span>
+										<span>6kg</span>
+										<span>$5/Kg</span>
+										<button class="btn btn-outline" data-toggle="modal" data-target="#review_modal"><i class="icon-quote"></i> Add Review</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-header" id="orederid2" data-toggle="collapse" data-target="#order2" aria-expanded="true" aria-controls="order2">
+							<p>Order Id : <span>#175</span></p><p>Bill : <span>$150</span></p> <i class="icon-chevron-down"></i>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="tab-pane fade" id="addresses" role="tabpanel" aria-labelledby="addresses_tab">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="address-card active">
+							<div class="header">Home <button class="btn btn-outline icon-btn"><i class="icon-check"></i></button></div>
+							<address>
+								<strong>User Name</strong>
+								4244 Willow Oaks Lane<br>
+								Lake Charles, LA<br>
+								Louisiana , 70601
+							</address>
+							<ul class="actions">
+								<li><button class="btn btn-outline icon-btn active"><i class="icon-check"></i></button></li>
+								<li><button class="btn btn-outline icon-btn" data-toggle="modal" data-target="#address_modal"><i class="icon-edit"></i></button></li>
+								<li><button class="btn btn-outline icon-btn"><i class="icon-cross"></i></button></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="address-card">
+							<div class="header">Office <button class="btn btn-outline icon-btn"><i class="icon-check"></i></button></div>
+							<address>
+								<strong>User Name</strong>
+								4244 Willow Oaks Lane<br>
+								Lake Charles, LA<br>
+								Louisiana , 70601
+							</address>
+							<ul class="actions">
+								<li><button class="btn btn-outline icon-btn"><i class="icon-check"></i></button></li>
+								<li><button class="btn btn-outline icon-btn" data-toggle="modal" data-target="#address_modal"><i class="icon-edit"></i></button></li>
+								<li><button class="btn btn-outline icon-btn"><i class="icon-cross"></i></button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<button class="btn btn-grn d-block m-auto mt-2" data-toggle="modal" data-target="#address_modal">Add Address</button>
+            </div>
+            <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews_tab">
+				<div class="reviews-list">
+					<div class="item">
+						<div class="data">
+							<p class="for">for : <strong>Apples</strong></p>
+							<ul class="stars">
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="far fa-star"></i></li>
+							</ul>
+							<p>Was delivered on time and Fresh.</p>
+						</div>
+						<button class="btn btn-outline icon-btn" data-toggle="modal" data-target="#review_modal"><i class="icon-edit"></i></button>
+					</div>
+					<div class="item">
+						<div class="data">
+							<p class="for">for : <strong>Apples</strong></p>
+							<ul class="stars">
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="far fa-star"></i></li>
+							</ul>
+							<p>Was delivered on time and Fresh.</p>
+						</div>
+						<button class="btn btn-outline icon-btn" data-toggle="modal" data-target="#review_modal"><i class="icon-edit"></i></button>
+					</div>
+					<div class="item">
+						<div class="data">
+							<p class="for">for : <strong>Apples</strong></p>
+							<ul class="stars">
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="far fa-star"></i></li>
+							</ul>
+							<p>Was delivered on time and Fresh.</p>
+						</div>
+						<button class="btn btn-outline icon-btn" data-toggle="modal" data-target="#review_modal"><i class="icon-edit"></i></button>
+					</div>
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="contact">
+            <li><a href="#"><i class="icon-pin"></i>Lorem ipsum dolor sit,London, USA</a></li>
+            <li><a href="#"><i class="icon-phone"></i>+123456789</a></li>
+            <li><a href="#"><i class="icon-mail"></i>info@freshflorida.com</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center sm-order">
+          <img src="img/logo-transparent.png" alt="logo" class="logo">
+        </div>
+        <div class="col-md-4">
+            <p>Sign up for our newsletter and stay informed of the latest offers.</p>
+            <div class="md-form input-group">
+              <input type="email" class="form-control" placeholder="Enter your Email Id">
+              <button class="btn btn-grn">Subscribe</button>
+            </div>
+            <ul class="social">
+              <li><a href="#" target="_blank" class="btn btn-grn"><i class="icon-fb"></i></a></li>
+              <li><a href="#" target="_blank" class="btn btn-grn"><i class="icon-twitter"></i></a></li>
+              <li><a href="#" target="_blank" class="btn btn-grn"><i class="icon-insta"></i></a></li>
+            </ul>
+        </div>
+      </div>
+      <p class="cpy">© Copyright 2020 , Fresh Florida.  All Rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Change Password Modal -->
+  <div class="modal fade" id="pwd_modal" tabindex="-1" role="dialog" aria-labelledby="pwd_modal"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="icon-cross"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 class="title">Change Password</h5>
+          <form action="">
+            <div class="md-form"><input type="password" class="form-control" placeholder="Current Password"></div>
+            <div class="md-form"><input type="password" class="form-control" placeholder="New Password"></div>
+            <div class="md-form"><input type="password" class="form-control" placeholder="Confirm New Password"></div>
+            <a href="#" class="btn btn-grn d-block m-0">SAVE</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 	<!-- Add review Modal -->
+ 	<div class="modal fade" id="review_modal" tabindex="-1" role="dialog" aria-labelledby="review_modal" aria-hidden="true">
+ 		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" class="icon-cross"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h5 class="title">Add Review</h5>
+					<form action="">
+						<span id="star_rating"  class="empty-stars"></span>
+						<div class="md-form">
+							<label for="review">Your Feedback</label>
+							<textarea name="" id="review" rows="4" class="form-control"></textarea>
+						</div>
+						<a href="#" class="btn btn-grn d-block">Submit</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Add review Modal -->
+	<div class="modal fade" id="address_modal" tabindex="-1" role="dialog" aria-labelledby="address_modal" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" class="icon-cross"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h5 class="title">Address</h5>
+					<form action="">
+						<div class="md-form"><input type="text" class="form-control" placeholder="Name of the Address"></div>
+						<div class="md-form"><input type="text" class="form-control" placeholder="Name"></div>
+						<div class="md-form"><input type="text" class="form-control" placeholder="Address line 1"></div>
+						<div class="md-form"><input type="text" class="form-control" placeholder="Address line 2"></div>
+						<div class="md-form"><input type="text" class="form-control" placeholder="City"></div>
+						<div class="md-form"><input type="text" class="form-control" placeholder="State"></div>
+						<div class="md-form"><input type="text" class="form-control" placeholder="Pincode"></div>
+						<div class="md-form">
+							<label for="review">Your Feedback</label>
+							<textarea name="" id="review" rows="4" class="form-control"></textarea>
+						</div>
+						<a href="#" class="btn btn-grn d-block">Submit</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+	<!-- Ratings JS -->
+	<script type="text/javascript" src="js/addons/rating.min.js"></script>
+	<!-- Bootstrap Select -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+	<!-- Bootstrap Datepicker -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	<!-- Custom JS -->
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<script>
+		// Rating
+		$('#star_rating').mdbRate();
+		// Edit Profile
+		$("#edit").on('click', function(){
+			$("#profile").toggleClass('edit');
+			$(this).text(function(i, text){
+				return text === "Save Changes" ? "Edit Profile" : "Save Changes";
+			})
+		});
+
+		$("#edit_img").on('click', function(){
+			$("#profile").toggleClass('edit');
+			$("#edit").text(function(i, text){
+				return text === "Save Changes" ? "Edit Profile" : "Save Changes";
+			})
+		});
+
+		// User Image Preview
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+
+				reader.onload = function (e) {
+					$('#userimg')
+						.attr('src', e.target.result);
+				};
+
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+	</script>
+</body>
+</html>
