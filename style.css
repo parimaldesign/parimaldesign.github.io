@@ -251,9 +251,6 @@ footer p a:hover::after{
     gap: 30px;
 }
 
-.projects-list .project-tile{
-}
-
 .projects-list .project-item{
     display: flex;
     flex-direction: column;
