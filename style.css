@@ -392,7 +392,7 @@ footer a:hover{
 
   /* Responsive */
 
-  @media (min-width: 468px) and (max-width: 1010px){
+@media (min-width: 468px) and (max-width: 1010px){
 
     body{
         padding-top: 50px;
@@ -430,4 +430,10 @@ footer a:hover{
     }
 
 
+  }
+
+  @media only screen and (max-width: 480px){
+    .projects-list {
+        grid-template-columns: repeat(1,1fr);
+    }
   }
