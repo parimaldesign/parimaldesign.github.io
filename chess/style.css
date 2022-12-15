@@ -1,0 +1,185 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+body,
+ol,
+ul,
+li,
+div,
+p,
+span,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+thead,
+th,
+tbody,
+tr,
+td,
+img,
+input,
+textarea,
+dd,
+dt,
+dl {
+  word-wrap: break-word;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+textarea {
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dd,
+dt,
+dl {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+a img,
+img {
+  border: none;
+  outline: none;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button],
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+  color: inherit;
+  transition: 0.3s;
+}
+a:hover,
+button:hover {
+  text-decoration: none;
+}
+
+input {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-font-smoothing: antialiased;
+  background-color: #fff;
+}
+
+::-moz-selection {
+  text-shadow: none;
+  background: rgba(65, 131, 196, 0.4);
+}
+
+::selection {
+  text-shadow: none;
+  background: rgba(65, 131, 196, 0.4);
+}
+
+.clear {
+  clear: both;
+  height: 0px;
+  overflow: hidden;
+  width: auto;
+  display: block;
+  float: none !important;
+}
+
+ul,
+menu,
+dir {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+}
+
+.chess-board {
+  display: grid;
+  width: 75vh;
+  height: 75vh;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  box-shadow: 0 10px 30px rgba(16, 42, 32, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+}
+.chess-board .box {
+  background-color: #ebfff8;
+}
+.chess-board .box:nth-child(-2n+8),
+.chess-board .box:nth-child(8) ~ div:nth-child(-2n+15) {
+  background-color: #04aa6d;
+}
+.chess-board div:nth-child(4n) {
+  background-color: #fff;
+}/*# sourceMappingURL=style.css.map */

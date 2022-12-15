@@ -52,7 +52,7 @@ nav .logo::after{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: rgb(17 19 34 / 80%);
+    background-color: rgb(32 36 62 / 80%);
     z-index: -1;
     backdrop-filter: blur(10px);
 }
@@ -281,6 +281,7 @@ footer p a:hover::after{
 }
 
 .projects-list .project-item .img-wrap{
+    display: flex;
     overflow: hidden;
 }
 
