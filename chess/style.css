@@ -177,9 +177,12 @@ body {
   background-color: #ebfff8;
 }
 .chess-board .box:nth-child(-2n+8),
-.chess-board .box:nth-child(8) ~ div:nth-child(-2n+15) {
+.chess-board .box:nth-child(8) ~ div:nth-child(-2n+15),
+.chess-board .box:nth-child(17) ~ div:nth-child(-2n+24),
+.chess-board .box:nth-child(24) ~ div:nth-child(-2n+31),
+.chess-board .box:nth-child(33) ~ div:nth-child(-2n+40),
+.chess-board .box:nth-child(40) ~ div:nth-child(-2n+47),
+.chess-board .box:nth-child(48) ~ div:nth-child(-2n+56),
+.chess-board .box:nth-child(55) ~ div:nth-child(-2n+63) {
   background-color: #04aa6d;
-}
-.chess-board div:nth-child(4n) {
-  background-color: #fff;
 }/*# sourceMappingURL=style.css.map */
