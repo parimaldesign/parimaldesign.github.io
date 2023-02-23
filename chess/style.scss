@@ -187,3 +187,10 @@ body{
         background-color: #04aa6d;
     }
 }
+
+@media screen and (max-width: 767px){
+    .chess-board{
+        width: 85vw;
+        height: 85vw;
+    }
+}

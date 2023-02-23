@@ -185,4 +185,11 @@ body {
 .chess-board .box:nth-child(48) ~ div:nth-child(-2n+56),
 .chess-board .box:nth-child(55) ~ div:nth-child(-2n+63) {
   background-color: #04aa6d;
+}
+
+@media screen and (max-width: 767px) {
+  .chess-board {
+    width: 85vw;
+    height: 85vw;
+  }
 }/*# sourceMappingURL=style.css.map */
