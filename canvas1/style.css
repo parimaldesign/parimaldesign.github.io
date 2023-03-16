@@ -1,0 +1,111 @@
+body {
+  background: rgb(31, 24, 41);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* cursor: none; */
+}
+
+/* Custom cursor */
+
+/* .cursor{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #000;
+  opacity: 0.5;
+  z-index: 1;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  filter: invert(1);  
+} */
+
+.red {
+  background: #e44236;
+  margin-right: 5px;
+}
+.cyan {
+  background: #25ccf7;
+  margin-right: 5px;
+}
+.violet {
+  background: #8b78e6;
+  margin-right: 5px;
+}
+.orange {
+  background: #ea7773;
+  margin-right: 5px;
+}
+.pink {
+  background: #bb2cd9;
+}
+
+.center {
+  min-width: 400px;
+  height: 400px;
+  background: rgb(66, 66, 66);
+  border-radius: 100%;
+  transition: 0.2s ease-in-out all;
+}
+.color-hover {
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.text {
+  padding: 10px;
+  color: #ffffff;
+}
+.color {
+  width: 120px;
+  height: 30px;
+  border-radius: 5%;
+  margin-bottom: 30px;
+}
+.color:hover {
+  cursor: pointer;
+}
+.color:last-child {
+  margin-bottom: 0;
+}
+
+.buttons-wrap{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 50px;
+  border-radius: 15px;
+  background-color: rgb(255 255 255 / 20%);
+  backdrop-filter: blur(50px) saturate(180%);
+}
+
+.buttons-wrap .btn{
+  font-weight: 600;
+  padding: 15px 25px;
+  font-size: 17px;
+  background-color: rgb(255 255 255 / 00%);
+  border-radius: 45px;
+  border: 0;
+  color: #ffffffdd;
+  transition: all ease-in-out .3s;
+}
+
+.buttons-wrap .btn:hover{
+  color: #222;
+  background-color: rgb(255 255 255 / 80%);
+}
