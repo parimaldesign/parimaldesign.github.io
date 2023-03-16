@@ -104,6 +104,24 @@ function randomCircles(){
 	}
 }
 
-function randomLines(){
-	
+function randomRectangles(){
+	c.clearRect(0, 0, canvas.width, canvas.height);	
+	const n = Math.random() * 250;
+
+	for(let i = 0; i < n; i++){
+
+		var x = Math.random() * window.innerWidth;
+		var y = Math.random() * window.innerHeight;
+		var length = Math.random() * 200;
+		var width = Math.random() * 200;
+
+		var r = Math.random() * 255;
+		var g = Math.random() * 255;
+		var b = Math.random() * 255;
+		var col = `rgba(${r},${g},${b},0.5)`
+
+		c.fillStyle = col;
+
+		c.fillRect(x, y, length, width)
+	}
 }
