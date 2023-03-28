@@ -209,7 +209,8 @@ footer p a:hover::after{
     margin-right: 5px;
 }
 
-.btns a:hover{
+.btns a:hover,
+.links a:hover{
     color: #fff;
     background: #d53738;
     transform: translateY(-2px);
