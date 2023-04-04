@@ -115,16 +115,24 @@
             </div>
         </section>
         <section class="tech-stack">
-            <div class="tab-content">
-                <img src="images/Tech.png" alt="Stack-img">
+            <div id="stackGrid" class="fullstack">
+                <img src="images/1.png" alt="1" class="img-responsive php">
+                <img src="images/2.png" alt="1" class="img-responsive react">
+                <img src="images/3.png" alt="1" class="img-responsive angular">
+                <img src="images/4.png" alt="1" class="img-responsive shopify">
+                <img src="images/5.png" alt="1" class="img-responsive laravel">
+                <img src="images/6.png" alt="1" class="img-responsive woo">
+                <img src="images/7.png" alt="1" class="img-responsive html5">
+                <img src="images/8.png" alt="1" class="img-responsive css3">
             </div>
             <div>
                 <h2 class="heading">Our Latest Technology Stack We Use</h2>
                 <div class="tabs">
-                    <a href="#" class="active">Javascript Framework</a>
-                    <a href="#">Mobile Technology</a>
-                    <a href="#">Web Technology</a>
-                    <a href="#">Front End & UI/UX Design</a>
+                    <a href="javascript:void(0)" onclick="setTechStack('fullstack')" class="active">Full Stack</a>
+                    <a href="javascript:void(0)" onclick="setTechStack('jsf')">Javascript Framework</a>
+                    <a href="javascript:void(0)" onclick="setTechStack('mobiletech')">Mobile Technology</a>
+                    <a href="javascript:void(0)" onclick="setTechStack('webtech')">Web Technology</a>
+                    <a href="javascript:void(0)" onclick="setTechStack('ui')">Front End & UI/UX Design</a>
                 </div>
             </div>
         </section>
@@ -132,7 +140,6 @@
     <footer>
         <div class="newsletter">
             <p class="title">Hate To Miss Our Special Offers? Subscribe Here!</p>
-
             <form action="" class="d-flex">
                 <input type="email" class="input-field" placeholder="Enter your Mail">
                 <input type="submit" class="btn" value="Subscribe">
@@ -185,5 +192,14 @@
             </ul>
         </div>
     </footer>
+
+    <script lang="javascript">
+        var grid = document.getElementById('stackGrid');
+
+        function setTechStack(newClass){
+            this.className = 'active';
+            grid.className = newClass;
+        }
+    </script>
 </body>
 </html>

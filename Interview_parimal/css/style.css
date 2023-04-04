@@ -19,6 +19,7 @@ a{
 
 .img-responsive{
     width: 100%;
+    height: auto;    
 }
 
 .d-flex{
@@ -379,11 +380,12 @@ nav .nav-links a:after{
 /* ----------------------------- Tech Stack ------------------------------*/
 
 .tech-stack{
-    padding: 100px 19%;
+    padding: 100px 50px;
     background-color: #F2F2F2;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
 }
 
 .tech-stack .tabs{
@@ -435,6 +437,66 @@ nav .nav-links a:after{
 .tech-stack .tabs a.active::after{
     height: 100%;
 }
+
+#stackGrid{
+    display: grid;
+    gap: 15px;
+    grid-auto-columns: 150px;
+    grid-template-areas:
+    'one two three'
+    'four five six'
+    'seven eight nine'
+    'ten eleven twelve';
+}
+
+#stackGrid img{
+    transition: all ease-in-out .3s;
+}
+
+.fullstack .php{grid-area: one; transform: scale(1);}
+.fullstack .react{grid-area: four; transform: scale(1);}
+.fullstack .angular{grid-area: five; transform: scale(1);}
+.fullstack .shopify{grid-area: six; transform: scale(1);}
+.fullstack .laravel{grid-area: seven; transform: scale(1);}
+.fullstack .woo{grid-area: eight; transform: scale(1);}
+.fullstack .html5{grid-area: nine; transform: scale(1);}
+.fullstack .css3{grid-area: twelve; transform: scale(1);}
+
+.jsf .php{transform: scale(0);}
+.jsf .react{grid-area: one;}
+.jsf .angular{grid-area: five;}
+.jsf .shopify{transform: scale(0);}
+.jsf .laravel{transform: scale(0);}
+.jsf .woo{transform: scale(0);}
+.jsf .html5{transform: scale(0);}
+.jsf .css3{transform: scale(0);}
+
+.mobiletech .php{grid-area: one;transform: scale(0);}
+.mobiletech .react{grid-area: four;}
+.mobiletech .angular{grid-area: five;}
+.mobiletech .shopify{grid-area: eight;}
+.mobiletech .laravel{grid-area: seven;transform: scale(0);}
+.mobiletech .woo{grid-area: eight;transform: scale(0);}
+.mobiletech .html5{grid-area: nine;}
+.mobiletech .css3{grid-area: twelve;}
+
+.webtech .php{grid-area: one;transform: scale(0);}
+.webtech .react{grid-area: four;}
+.webtech .angular{grid-area: five;}
+.webtech .shopify{grid-area: six;transform: scale(0);}
+.webtech .laravel{grid-area: seven;transform: scale(0);}
+.webtech .woo{grid-area: eight;transform: scale(0);}
+.webtech .html5{grid-area: nine;}
+.webtech .css3{grid-area: twelve;}
+
+.ui .php{grid-area: one; transform: scale(0);}
+.ui .react{grid-area: four;}
+.ui .angular{grid-area: five;}
+.ui .shopify{grid-area: six; transform: scale(0);}
+.ui .laravel{grid-area: seven; transform: scale(0);}
+.ui .woo{grid-area: eight; transform: scale(0);}
+.ui .html5{grid-area: nine;}
+.ui .css3{grid-area: twelve;}
 
 /* ----------------------------- Footer ------------------------------*/
 
