@@ -112,18 +112,23 @@ nav .logo .ring{
     list-style: none;
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 8px 25px;
+    gap: 30px;
+    border-radius: 50px;
+    background-color: rgb(255 255 255 / 10%);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgb(255 255 255 / 20%);
 }
 
 .nav a{
     color: #fff;
     font-size: 1.1rem;
     text-decoration: none;
-    margin-left: 30px;
     display: block;
     position: relative;
     letter-spacing: .6px;
-    transition: all ease-in-out .2s;
+    transition: auto;
+    text-shadow: 1px 1px rgb(0 0 0 / 50%);
 }
 
 .nav a::after,
@@ -387,22 +392,22 @@ footer a:hover{
 /* Custom scrollbar */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #20243e;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #d3dcff;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #d53738;
   }
 
   /* Responsive */
