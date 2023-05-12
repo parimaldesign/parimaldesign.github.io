@@ -1,0 +1,10 @@
+9
+74C:\Projects\Other\Portfolio\parimaldesign.github.io\threejs-project\app.js133265442507643984 0
+72C:\Projects\Other\Portfolio\parimaldesign.github.io\threejs-project\dist133265417989181302 1
+90C:\Projects\Other\Portfolio\parimaldesign.github.io\threejs-project\dist\index.7c0ccee6.js133265417989054965 0
+78C:\Projects\Other\Portfolio\parimaldesign.github.io\threejs-project\index.html133265443611009352 0
+93C:\Projects\Other\Portfolio\parimaldesign.github.io\threejs-project\dist\favicon.e3683a8b.ico133265417988706929 0
+94C:\Projects\Other\Portfolio\parimaldesign.github.io\threejs-project\dist\index.7c0ccee6.js.map133265417989077285 0
+100C:\Projects\Other\Portfolio\parimaldesign.github.io\threejs-project\dist\threejs-project.3464ddca.js133265417989104330 0
+83C:\Projects\Other\Portfolio\parimaldesign.github.io\threejs-project\dist\index.html133265417989020196 0
+104C:\Projects\Other\Portfolio\parimaldesign.github.io\threejs-project\dist\threejs-project.3464ddca.js.map133265417989181302 0

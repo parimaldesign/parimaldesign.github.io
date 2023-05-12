@@ -265,8 +265,9 @@ footer p a:hover::after{
     padding: 0;
     display: grid;
     list-style: none;
-    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
 }
 
 .projects-list .project-item{
@@ -443,11 +444,6 @@ footer a:hover{
     #welcome-section{
         flex-direction: column;
     }
-
-    .projects-list {
-        grid-template-columns: 1fr 1fr;
-    }
-
 
   }
 

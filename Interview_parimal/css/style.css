@@ -7,6 +7,7 @@ body{
     font-family: Roboto,Sans-serif;
     letter-spacing: .2px;
     color: #0F1520;
+    overflow-x: hidden;
 }
 
 ul{
