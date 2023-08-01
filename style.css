@@ -19,6 +19,12 @@ body{
     color: #fff;
 }
 
+ul,ol{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
 /* Navbar */
 
 header{
@@ -115,8 +121,8 @@ nav .logo .ring{
     padding: 8px 25px;
     gap: 30px;
     border-radius: 50px;
-    background-color: rgb(32 36 62 / 50%);
-    backdrop-filter: blur(30px);
+    background-color: rgb(32 36 62 / 60%);
+    backdrop-filter: blur(10px);
     border: 1px solid rgb(211 220 255 / 10%);
 }
 
@@ -179,9 +185,9 @@ footer p a:hover::after{
     z-index: -1;
     top: -4%;
     left: 0px;
-    background: linear-gradient(318deg,#d94944,#7777bb);
-    opacity: .8;
-    box-shadow: 100px 100px 50px #765e8e;
+    background: linear-gradient(318deg,#89fff9,#9e41ff);
+    opacity: .7;
+    box-shadow:25px 25px 50px #6088ff;
 }
 
 #welcome-section .top{
@@ -191,6 +197,16 @@ footer p a:hover::after{
 #welcome-section h1{
     font-size: 2.4rem;
     font-weight: 400;
+}
+
+#welcome-section h1 span{
+    font-family: 'Allura', cursive;
+    background: linear-gradient(318deg,#89fff9,#ba78ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 4px 6px #000);
+    font-size: 2.8rem;
 }
 
 #welcome-section p{
@@ -266,16 +282,52 @@ footer p a:hover::after{
     list-style: none;
     gap: 30px;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+}
+
+.projects-list .project-tile .content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    transition: all ease-in-out .3s;
+}
+
+.projects-list .project-item .content .title{
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: larger;
+    transition: all ease-in-out .3s;
+}
+
+.projects-list .project-item .content .tags{
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    transition: all ease-in-out .3s;
+}
+
+.projects-list .project-item .content .tags .tag{
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: rgb(255 255 255 / 70%);
+    border-radius: 5px;
+    color: #20243E;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .projects-list .project-item{
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    padding: 5px;
     background-color: #363950;
-    border-radius: 3px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
     box-shadow: 0 5px 10px rgba(31, 26, 33, 0.4);
     transition: all ease-in-out .4s;
 }
@@ -286,39 +338,18 @@ footer p a:hover::after{
 }
 
 .projects-list .project-item .img-wrap{
-    display: flex;
     overflow: hidden;
+    max-height: 320px;
 }
 
 .projects-list .project-item .img-wrap img{
     max-width: 100%;
-    transition: all ease-in-out .3s;
+    transition: none;
 }
 
 .projects-list .project-item:hover .img-wrap img{
-    transform: scale(1.1,1.1);
-}
-
-.projects-list .project-item span{
-    display: inline-block;
-    position: relative;
-    color: #fff;
-    font-size: 20px;
-    padding: 12px 12px 4px;
-}
-
-.projects-list .project-item span:after{
-    content: "\f178";
-    font-family: FontAwesome;
-    position: absolute;
-    right: 20px;
-    opacity: 0;
-    transition: all ease-in-out .2s;
-}
-
-.projects-list .project-item:hover span:after{
-    opacity: 1;
-    right: 15px;
+    transform: translateY(calc(-100% + 320px));
+    transition: all ease 10s;
 }
 
 footer{

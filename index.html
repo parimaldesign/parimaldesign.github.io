@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parimals Bakrola - Portfolio</title>
+    <title>Parimal Bakrola's - Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?v=2.0">
+    <link rel="stylesheet" href="simpleLightbox.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
@@ -28,10 +30,12 @@
             </a>
             <ul class="nav">
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#contact">Contact Me</a></li>
                 <li>
-                    <a href="https://github.com/parimaldesign"><i class="fa fa-github-alt" aria-hidden="true"></i>
-                        Github</a>
+                    <a href="https://github.com/parimaldesign">
+                        <i class="fa fa-github-alt" aria-hidden="true"></i> Github
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -40,8 +44,10 @@
         <section id="welcome-section">
             <div class="content">
                 <div class="top">
-                    <h1>Hi! I'm Parimal; <br>UX/UI Designer & Front-End Developer.</h1>
-                    <!-- <p>I help you <span></span></p> -->
+                    <h1>Hi! I'm Parimal; <span>Passionate & Self-Taught</span> <br>UX/UI Designer & Front-End Developer.</h1>
+                    <p>
+                        I craft seamless interfaces that engage customers, drive conversions, and take your brand to new heights!
+                    </p>
                 </div>
                 <ul class="btns">
                     <li><a href="mailto: pbakrola5@gmail.com"> <i class="fa fa-envelope-open"></i> Lets talk</a></li>
@@ -58,69 +64,214 @@
                 <div class="project-tile">
                     <a href="https://parimaldesign.github.io/pure_broking" target="_blank" class="project-item">
                         <div class="img-wrap">
-                            <img src="images/pure.jpg" alt="Pure Broking">
+                            <img src="images/pure-ss.jpg" alt="Pure Broking">
                         </div>
-                        <span>Pure Broking</span>
+                        <div class="content">
+                            <p class="title">Pure Broking</p>
+                            <ul class="tags">
+                                <li><span class="tag ux">UX</span></li>
+                                <li><span class="tag ui">UI</span></li>
+                                <li><span class="tag fe">Front End</span></li>
+                            </ul>
+                        </div>
                     </a>
                 </div>
                 <div class="project-tile">
                     <a href="https://parimaldesign.github.io/Interview_parimal/" target="_blank" class="project-item">
                         <div class="img-wrap">
-                            <img src="images/hpdevco.jpg" alt="HP Dev Co">
+                            <img src="images/hpdevco-min.png" alt="HP Dev Co">
                         </div>
-                        <span>HP Dev Co</span>
+                        <div class="content">
+                            <p class="title">HPDevCo</p>
+                            <ul class="tags">
+                                <li><span class="tag">Front End</span></li>
+                            </ul>
+                        </div>
                     </a>
                 </div>
+                <div class="project-tile">
+                    <a href="images/snapee-min.png" class="project-item portfolio-img">
+                        <div class="img-wrap">
+                            <img src="images/snapee-min.png" alt="Snapee">
+                        </div>
+                        <div class="content">
+                            <p class="title">Snapee</p>
+                            <ul class="tags">
+                                <li><span class="tag">UX</span></li>
+                                <li><span class="tag">UI</span></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <!-- 
                 <div class="project-tile">
                     <a href="https://parimaldesign.github.io/fresh_florida/" target="_blank" class="project-item">
                         <div class="img-wrap">
                             <img src="images/fresh-florida.jpg" alt="Fresh Florida">
                         </div>
-                        <span>Fresh Florida</span>
+                        <div class="content">
+                            <p class="title">Fresh Florida</p>
+                            <ul class="tags">
+                                <li><span class="tag ux">UX</span></li>
+                                <li><span class="tag ui">UI</span></li>
+                                <li><span class="tag fe">Front End</span></li>
+                            </ul>
+                        </div>
                     </a>
                 </div>
+                -->
+                <!-- 
                 <div class="project-tile">
                     <a href="https://parimaldesign.github.io/adam_ben/" target="_blank" class="project-item">
                         <div class="img-wrap">
                             <img src="images/adam-ben.jpg" alt="Adam Ben">
                         </div>
-                        <span>Adam Ben</span>
+                        <div class="content">
+                            <p class="title">Adam Ben</p>
+                            <ul class="tags">
+                                <li><span class="tag ux">UX</span></li>
+                                <li><span class="tag ui">UI</span></li>
+                                <li><span class="tag fe">Front End</span></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                -->
+                
+                <div class="project-tile">
+                    <a href="images/crindel-min.png" class="project-item portfolio-img">
+                        <div class="img-wrap">
+                            <img src="images/crindel-min.png" alt="site">
+                        </div>
+                        <div class="content">
+                            <p class="title">Property Platform</p>
+                            <ul class="tags">
+                                <li><span class="tag ux">UX</span></li>
+                                <li><span class="tag ui">UI</span></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-tile">
+                    <a href="images/duchesneInn-min.png" class="project-item portfolio-img">
+                        <div class="img-wrap">
+                            <img src="images/duchesneInn-min.png" alt="duchesne inn">
+                        </div>
+                        <div class="content">
+                            <p class="title">Duchesne Inn</p>
+                            <ul class="tags">
+                                <li><span class="tag ux">UX</span></li>
+                                <li><span class="tag ui">UI</span></li>
+                                <li><span class="tag fe">Front End</span></li>
+                            </ul>
+                        </div>
                     </a>
                 </div>
                 <div class="project-tile">
-                    <a href="http://duchesneinn.com" target="_blank" class="project-item">
+                    <a href="images/giftcarat-min.png" class="project-item">
                         <div class="img-wrap">
-                            <img src="images/duchesne.png" alt="duchesne inn">
+                            <img src="images/giftcarat-min.png" alt="site">
                         </div>
-                        <span>Duchesne Inn</span>
+                        <div class="content">
+                            <p class="title">Giftcarat</p>
+                            <ul class="tags">
+                                <li><span class="tag ux">UX</span></li>
+                                <li><span class="tag ui">UI</span></li>
+                                <li><span class="tag fe">Front End</span></li>
+                            </ul>
+                        </div>
                     </a>
                 </div>
                 <div class="project-tile">
-                    <a href="#" class="project-item">
+                    <a href="images/stJohns - Aus-min.png" class="project-item portfolio-img">
                         <div class="img-wrap">
-                            <img src="images/giftCarat.png" alt="site">
+                            <img src="images/stJohns - Aus-min.png" alt="site">
                         </div>
-                        <span>Giftcarat</span>
+                        <div class="content">
+                            <p class="title">St. Johns</p>
+                            <ul class="tags">
+                                <li><span class="tag ux">UX</span></li>
+                                <li><span class="tag ui">UI</span></li>
+                            </ul>
+                        </div>
                     </a>
                 </div>
                 <div class="project-tile">
-                    <a href="#" class="project-item">
+                    <a href="images/automate-min.png" class="project-item portfolio-img">
                         <div class="img-wrap">
-                            <img src="images/stJohns.png" alt="site">
+                            <img src="images/automate-min.png" alt="site">
                         </div>
-                        <span>St.Johns Church</span>
+                        <div class="content">
+                            <p class="title">Pure Automate</p>
+                            <ul class="tags">
+                                <li><span class="tag ux">UX</span></li>
+                                <li><span class="tag ui">UI</span></li>
+                                <li><span class="tag fe">Front End</span></li>
+                            </ul>
+                        </div>
                     </a>
                 </div>
                 <div class="project-tile">
-                    <a href="#" class="project-item">
+                    <a href="images/ebook-min.png" class="project-item portfolio-img">
                         <div class="img-wrap">
-                            <img src="images/automate.png" alt="site">
+                            <img src="images/ebook-min.png" alt="site">
                         </div>
-                        <span>Pure Automate</span>
+                        <div class="content">
+                            <p class="title">E-Book Platform</p>
+                            <ul class="tags">
+                                <li><span class="tag ux">UX</span></li>
+                                <li><span class="tag ui">UI</span></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="images/capertown-min.png" class="project-item portfolio-img">
+                        <div class="img-wrap">
+                            <img src="images/capertown-min.png" alt="site">
+                        </div>
+                        <div class="content">
+                            <p class="title">Interior Design Company</p>
+                            <ul class="tags">
+                                <li><span class="tag ux">UX</span></li>
+                                <li><span class="tag ui">UI</span></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="images/trade-triggers-min.png" class="project-item portfolio-img">
+                        <div class="img-wrap">
+                            <img src="images/trade-triggers-min.png" alt="site">
+                        </div>
+                        <div class="content">
+                            <p class="title">Crypto Trading</p>
+                            <ul class="tags">
+                                <li><span class="tag ux">UX</span></li>
+                                <li><span class="tag ui">UI</span></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="images/profitbase-min.png" class="project-item portfolio-img">
+                        <div class="img-wrap">
+                            <img src="images/profitbase-min.png" alt="site">
+                        </div>
+                        <div class="content">
+                            <p class="title">Banking Platform</p>
+                            <ul class="tags">
+                                <li><span class="tag ux">UX</span></li>
+                                <li><span class="tag ui">UI</span></li>
+                            </ul>
+                        </div>
                     </a>
                 </div>
             </div>
         </section>
+
+        <section id="about"></section>
     </main>
     <footer id="contact">
         <ul class="links">
@@ -147,8 +298,13 @@
                 href="#">Parimal Bakrola</a></p>
     </footer>
 
+    <!-- Photo Gallery JS -->
+    <script src="simpleLightbox.min.js"></script>
     <script src="script.js"></script>
     <script>
+
+        new SimpleLightbox({ elements: '.project-tile .portfolio-img', scrollZoom: true });
+
         // Scroll Animation
         //common reveal options to create reveal animations
         ScrollReveal({
