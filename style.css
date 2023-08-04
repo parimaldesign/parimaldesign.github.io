@@ -199,7 +199,7 @@ footer p a:hover::after{
     font-weight: 400;
 }
 
-#welcome-section h1 span{
+/* #welcome-section h1 span{
     font-family: 'Allura', cursive;
     background: linear-gradient(318deg,#89fff9,#ba78ff);
     -webkit-background-clip: text;
@@ -207,7 +207,7 @@ footer p a:hover::after{
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(2px 4px 6px #000);
     font-size: 2.8rem;
-}
+} */
 
 #welcome-section p{
     font-size: 1.2rem;
@@ -339,7 +339,8 @@ footer p a:hover::after{
 
 .projects-list .project-item .img-wrap{
     overflow: hidden;
-    max-height: 320px;
+    /* max-height: 320px; */
+    aspect-ratio: 1.8;
 }
 
 .projects-list .project-item .img-wrap img{
@@ -471,8 +472,17 @@ footer a:hover{
         max-width: 100%;
         height: auto;
     }
+    .hero-img::after{        
+        width: 45vw;
+        height: 45vw;
+    }
     #welcome-section{
         flex-direction: column;
+        gap: 60px;    
+    }
+
+    footer .links{
+        gap: 20px 10px;
     }
 
   }
