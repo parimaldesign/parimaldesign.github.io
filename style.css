@@ -283,7 +283,13 @@ footer p a:hover::after{
     gap: 30px;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+}
+
+.projects-list:has(.project-item:hover) .project-item:not(:hover){
+    scale: 0.92;
+    filter: grayscale(1);
+    opacity: 0.8;
 }
 
 .projects-list .project-tile .content{
