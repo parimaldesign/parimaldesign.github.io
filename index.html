@@ -23,6 +23,15 @@
 </head>
 
 <body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="logo">
+            <img src="images/logo-f.png" alt="logo" class="icon">
+            <img id="ring" src="images/parimal-design-ring.png" alt="" class="ring">
+        </div>
+    </div>
+
     <header>
         <nav id="navbar">
             <a href="#" class="logo">
@@ -288,7 +297,7 @@
                 <a href="https://github.com/parimaldesign" target="_blank" class="cp"><i class="fa fa-github"></i> @parimaldesign</a>
             </li>
             <li>
-                <a href="https://www.instagram.com/parimal_design/" target="_blank" class="insta"><i class="fa fa-instagram"></i> @parimal.design</a>
+                <a href="https://www.instagram.com/parimal.design/" target="_blank" class="insta"><i class="fa fa-instagram"></i> @parimal.design</a>
             </li>
             <li>
                 <a href="https://www.behance.net/parimal_bakrola/projects" target="_blank" class="be"><i class="fa fa-behance"></i> @parimal_bakrola</a>
@@ -303,7 +312,6 @@
     <script src="simpleLightbox.min.js"></script>
     <script src="script.js"></script>
     <script>
-
         new SimpleLightbox({ elements: '.project-tile .portfolio-img', scrollZoom: true });
 
         // Scroll Animation
@@ -325,7 +333,7 @@
         ScrollReveal().reveal('.projects-list > *', { delay: 400, origin: 'bottom', interval: 150 });
 
         
-        ScrollReveal().reveal('#contact .links > *', { delay: 400, origin: 'bottom', interval: 150 });
+        ScrollReveal().reveal('#contact .links > *', { delay: 400, origin: 'bottom', interval: 150 , distance: '40px'  });
         // Scroll Animation end
     </script>
 </body>

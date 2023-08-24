@@ -7,6 +7,21 @@ body,html{
     font-weight: 500;
 }
 
+#loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    background: #20243E;
+    background-size: 150px;
+    display: grid;
+    place-content: center;
+}
+
+#loader .logo img{
+    max-height: 150px;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -44,12 +59,12 @@ nav{
     align-items: center;
 }
 
-nav .logo{
+.logo{
     display: block;
     position: relative;
 }
 
-nav .logo::after{
+.logo::after{
     content: "";
     position: absolute;
     width: 150%;
@@ -63,17 +78,17 @@ nav .logo::after{
     backdrop-filter: blur(10px);
 }
 
-nav .logo img{
+.logo img{
     max-height: 90px;
 }
 
-/* nav .logo .icon{
+/* .logo .icon{
     position: absolute;
     left: 0px;
     top: 0px;
 } */
 
-nav .logo .ring{
+.logo .ring{
     position: absolute;
     left: 0px;
     top: 0px;
@@ -231,7 +246,7 @@ footer p a:hover::after{
 .btns a:hover,
 .links a:hover{
     color: #fff;
-    background: #d53738;
+    background: linear-gradient(180deg, #d53738, hsl(360 65% 40% / 1));
     transform: translateY(-2px);
     box-shadow: 0 10px 30px #d5373880;
 }
@@ -332,7 +347,7 @@ footer p a:hover::after{
     text-decoration: none;
     background-color: #363950;
     position: relative;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 10px rgba(31, 26, 33, 0.4);
     transition: all ease-in-out .4s;
@@ -377,26 +392,26 @@ footer .links{
 .links a,
 .btns a{
     display: block;
-    padding: 10px 15px;
+    padding: 10px 18px;
     margin: 0 10px;
     text-decoration: none;
     color: #20243e;
-    background-color: #d3dcff;
+    background: linear-gradient(180deg, #d3dcff, hsl(228 100% 80% / 1));
     box-shadow: 0 10px 10px rgb(28 32 58 / 50%);
-    border-radius: 3px;
-    transition: all ease-in-out .4s;
+    border-radius: 8px;
+    transition: all ease .3s;
 }
 
 .links a.insta:hover{
     color: #fff;
-    background: #d6249f;
+    background: linear-gradient(180deg, #d6249f, hsl(319 71% 39% / 1));
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgb(214 36 159 / 50%);
 }
 
 .links a.be:hover{
     color: #fff;
-    background: #0057ff;
+    background: linear-gradient(180deg, #0057ff, hsl(220 100% 40% / 1));
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(0, 87, 255, .5);
 }
