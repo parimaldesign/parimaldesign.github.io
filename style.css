@@ -464,6 +464,13 @@ footer a:hover{
 
   /* Responsive */
 
+@media all and (max-width: 2400px){
+    .slbImage{
+        max-height: unset !important;
+        max-width: 80vw;
+    }
+}
+
 @media (min-width: 468px) and (max-width: 1010px){
 
     body{
