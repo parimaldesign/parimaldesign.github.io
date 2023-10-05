@@ -421,7 +421,7 @@ footer .links{
     margin: 0 10px;
     text-decoration: none;
     color: #20243e;
-    background: linear-gradient(180deg, #d3dcff, hsl(228deg 100% 84.09%));
+    background: linear-gradient(hsl(232 32% 95% / 1), hsl(232 32% 80% / 1));
     box-shadow: 0 10px 10px rgb(28 32 58 / 50%);
     border-radius: 8px;
     transition: all ease .3s;
