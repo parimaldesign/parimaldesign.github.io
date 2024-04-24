@@ -206,6 +206,10 @@ footer p a:hover::after{
     padding: 0 30px;
 }
 
+#projects{
+    scroll-margin-top: 100px;
+}
+
 .hero-img {
     position: relative;
     padding: 0;
