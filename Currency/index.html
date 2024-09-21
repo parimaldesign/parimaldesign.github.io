@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <label for="currency">Select Currency:</label>
+        <select id="currency" onchange="convertCurrency()">
+            <option value="USD">USD - United States Dollar</option>
+            <option value="CAD">CAD - Canadian Dollar</option>
+            <option value="AUD">AUD - Australian Dollar</option>
+            <option value="GBP">GBP - British Pound</option>
+            <option value="EUR">EUR - Euro</option>
+        </select>
+
+        <label for="amount">Enter Amount:</label>
+        <input type="text" id="amount" value="100" oninput="validateAndConvert()">
+
+        <label for="percentage">Enter Commission Percentage:</label>
+        <input type="text" id="percentage" value="10" oninput="validateAndConvert()">
+
+        <p id="result"></p>
+        <p id="earnings"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
