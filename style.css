@@ -56,7 +56,24 @@ body{
     flex-direction: column;
     background-color: #20243E;
     color: #fff;
+    position: relative;
 }
+
+/* .bg-frame{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bg-frame-inner{
+    width: 50%;
+    height: 100%;
+} */
 
 ul,ol{
     list-style: none;
